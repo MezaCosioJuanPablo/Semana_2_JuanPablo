@@ -1,0 +1,81 @@
+.palanquin-dark-regular {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.areaDeBotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la página */
+}
+
+/* vamos agregar color, estilo de letra y distribución */
+
+button {
+  margin: 30px;
+  width: 150px;
+  height: 100px; /* Ajuste para que no sea un círculo perfecto */
+  font-size: large;
+  background-color: aqua;
+  border-radius: 20px; /* Esquinas redondeadas, pero no completamente circulares */
+  border: none; /* Quita el contorno */
+  outline: none; /* Quita el contorno al hacer clic */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+}
+
+/*Estilos de celular*/
+@media only screen and (max-width: 600px) {
+  .areaDeBotones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la página */
+  }
+
+  /* vamos agregar color, estilo de letra y distribución */
+
+  button {
+    margin: 30px;
+    width: 150px;
+    height: 100px; /* Ajuste para que no sea un círculo perfecto */
+    font-size: large;
+    background-color: aqua;
+    border-radius: 20px; /* Esquinas redondeadas, pero no completamente circulares */
+    border: none; /* Quita el contorno */
+    outline: none; /* Quita el contorno al hacer clic */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+  }
+}
+
+/* Para pantallas medianas, como tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .areaDeBotones {
+    display: flex;
+    flex-direction: row; /* Coloca los botones en una fila */
+    justify-content: space-around; /* Distribuye los botones de manera uniforme */
+    align-items: center;
+    height: 100vh;
+  }
+
+  button {
+    margin: 20px;
+    width: 200px; /* Botones más anchos */
+    height: 300px; /* Un poco más altos */
+    font-size: x-large; /* Texto más grande */
+    background-color: green; /* Color de fondo verde */
+    border-radius: 25px; /* Esquinas menos redondeadas */
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+/*
+tarea 
+investigar medidas de una tableta 
+realizar ajustes de boton en tableta 
+cambiar a verde u otro en tableta*/
